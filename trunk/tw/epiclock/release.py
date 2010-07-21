@@ -4,8 +4,8 @@
 __DISTRIBUTION__ = 'tw.epiclock'
 __DESCRIPTION__ = 'Insert Clocks in templates'
 __URL__ = 'http://code.google.com/p/twepiclock'
-__VERSION__ = '0.1a0'
+__VERSION__ = '0.1a1'
 __AUTHOR__ = 'Nicolas Laurance'
-__EMAIL__ = 'nicolas.laurance<at>gmail'
+__EMAIL__ = 'nicolas[dot]laurance<at>gmail'
 __COPYRIGHT__ = "Copyright 2010 Nicolas Laurance"
 __LICENSE__ = 'MIT GPLv3'

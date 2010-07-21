@@ -11,4 +11,5 @@ from tw.epiclock import Epiclock
 class DemoEpiclock(Epiclock):
     # Provide default parameters, value, etc... here
     # default = <some-default-value>
+    demo_for = Epiclock
     pass
