@@ -29,7 +29,8 @@ class Epiclock(Widget):
                     rollover', 'expire', 'loop', 'stopwatch', 'holdup', 'timer'",
           # see included jquery.dateformat.js for more info
           "format": "default is 'F j, Y g:i:s a'",
-          "time": "start time (server time) when explicit mode is used",
+          "time": "javascript date to set the clock, eg : js_function('''new Date('Thu Jul 21 12:07:06 2010')'')",
+          "server_time": "True or False, uses server time as a base for the clock",
           "offset": "change time, {'days':1} or {'hours':2} or {'minutes' : -20} for example",
           "utc": "normalize timezone, default to False (local time)",
           }
@@ -37,7 +38,8 @@ class Epiclock(Widget):
     format = 'j-n-Y G:i:s'
     # display server time
     mode = 'explicit'
-    time = js_function("new Date('%s')" % datetime.now().ctime())
+    time = None
+    server_time = True
     offset = {}
     utc = False
 
@@ -52,5 +54,7 @@ class Epiclock(Widget):
                             utc=self.utc,
                             time=self.time,
                              )
+        if self.server_time:
+            multi_params['time'] = js_function("new Date('%s')" % datetime.now().ctime())
         call = js_function('$("#%s").epiclock' % d.id)(multi_params)
         self.add_call(call)
