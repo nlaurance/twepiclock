@@ -1,3 +1,7 @@
+
+Clock widget for toscawidget and turbogears
+===========================================
+
 This Widget encapsulates the epiclock JavaScript library
 `http://code.google.com/p/epiclock`_
 for inserting clocks and countdowns contents in a standard-friendly manner.
