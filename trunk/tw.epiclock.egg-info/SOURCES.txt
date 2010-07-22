@@ -1,7 +1,16 @@
+.project
+.pydevproject
+CHANGES.txt
+Contributors.txt
 MANIFEST.in
 README.txt
+paster.ini
 setup.cfg
 setup.py
+docs/conf.py
+docs/index.rst
+tests/__init__.py
+tests/test_widget.py
 tw/__init__.py
 tw.epiclock.egg-info/PKG-INFO
 tw.epiclock.egg-info/SOURCES.txt

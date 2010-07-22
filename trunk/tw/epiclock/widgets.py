@@ -23,7 +23,6 @@ class Epiclock(Widget):
     css = [epiclock_css]
 
     params = {
-          "param": "param_desc",
           # see included jquery.epiclock.js for more info
           "mode": "one of 'clock', 'explicit', 'countdown', 'countup', \
                     rollover', 'expire', 'loop', 'stopwatch', 'holdup', 'timer'",
